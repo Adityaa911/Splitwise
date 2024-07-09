@@ -18,6 +18,6 @@ public class Group extends BaseModel{
     private List<User> members;
     @ManyToOne
     private User createdBy;
-    @OneToMany
+    @OneToMany(mappedBy = "group")
     private List<Expense> expenses;
 }

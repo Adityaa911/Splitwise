@@ -19,4 +19,6 @@ public class Expense extends BaseModel{
     private ExpenseType expenseType;
     @OneToMany(mappedBy = "expense")
     private List<ExpenseUser> expenseUsers;
+    @ManyToOne
+    private Group group;
 }
